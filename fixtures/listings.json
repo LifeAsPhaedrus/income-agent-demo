@@ -1,0 +1,69 @@
+[
+  {
+    "source": "demo",
+    "url": "https://example.org/demo/1",
+    "title": "Python CSV cleanup",
+    "kind": "contract",
+    "hourly_usd": 40,
+    "weekly_hours": 4,
+    "skills": [
+      "python"
+    ],
+    "risk_flags": [],
+    "evidence": "SYNTHETIC TEST DATA: Python CSV cleanup; USD 40/hour; 4 hours/week; requires python."
+  },
+  {
+    "source": "demo",
+    "url": "https://example.org/demo/2",
+    "title": "SQL report checks",
+    "kind": "contract",
+    "hourly_usd": 45,
+    "weekly_hours": 5,
+    "skills": [
+      "sql"
+    ],
+    "risk_flags": [],
+    "evidence": "SYNTHETIC TEST DATA: SQL report checks; USD 45/hour; 5 hours/week; requires sql."
+  },
+  {
+    "source": "demo",
+    "url": "https://example.org/demo/3",
+    "title": "API documentation",
+    "kind": "contract",
+    "hourly_usd": 35,
+    "weekly_hours": 3,
+    "skills": [
+      "documentation"
+    ],
+    "risk_flags": [],
+    "evidence": "SYNTHETIC TEST DATA: API documentation; USD 35/hour; 3 hours/week; requires documentation."
+  },
+  {
+    "source": "demo",
+    "url": "https://example.org/demo/4",
+    "title": "Unknown-budget project",
+    "kind": "contract",
+    "hourly_usd": null,
+    "weekly_hours": 4,
+    "skills": [
+      "python"
+    ],
+    "risk_flags": [],
+    "evidence": "SYNTHETIC TEST DATA: Unknown-budget project; USD None/hour; 4 hours/week; requires python."
+  },
+  {
+    "source": "demo",
+    "url": "https://example.org/demo/5",
+    "title": "Pay-to-start offer",
+    "kind": "contract",
+    "hourly_usd": 100,
+    "weekly_hours": 2,
+    "skills": [
+      "python"
+    ],
+    "risk_flags": [
+      "upfront payment"
+    ],
+    "evidence": "SYNTHETIC TEST DATA: Pay-to-start offer; USD 100/hour; 2 hours/week; requires python."
+  }
+]

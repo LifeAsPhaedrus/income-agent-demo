@@ -1,0 +1,16 @@
+{
+  "display_name": "Sample analyst (fictional)",
+  "skills": [
+    "excel",
+    "analytics",
+    "dashboard creation",
+    "sales-to-inventory reconciliation"
+  ],
+  "preferred_hourly_usd": 60,
+  "unconfirmed_tools": [
+    "SQL",
+    "Power BI"
+  ],
+  "current_role": "Fictional operations analyst",
+  "professional_reporting": "Synthetic experience: maintains sample inventory and sales reports."
+}

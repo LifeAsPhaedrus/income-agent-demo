@@ -1,0 +1,56 @@
+[
+  {
+    "id": 101,
+    "source": "Demo",
+    "url": "https://example.org/demo/101",
+    "title": "Sample Excel Sales Dashboard",
+    "description": "SYNTHETIC DEMO: Build an Excel dashboard with sales charts and filters. Deliver a documented workbook.",
+    "status": "active",
+    "language": "en",
+    "type": "hourly",
+    "currency": {
+      "code": "USD"
+    },
+    "budget": {
+      "minimum": 60,
+      "maximum": 80
+    },
+    "source_notice": "Entirely fictional example; not a real job or client."
+  },
+  {
+    "id": 102,
+    "source": "Demo",
+    "url": "https://example.org/demo/102",
+    "title": "Sample Inventory Reconciliation",
+    "description": "SYNTHETIC DEMO: Reconcile inventory and sales in an Excel spreadsheet. Explain differences in a report.",
+    "status": "active",
+    "language": "en",
+    "type": "fixed",
+    "currency": {
+      "code": "USD"
+    },
+    "budget": {
+      "minimum": 600,
+      "maximum": 900
+    },
+    "source_notice": "Entirely fictional example; not a real job or client."
+  },
+  {
+    "id": 103,
+    "source": "Demo",
+    "url": "https://example.org/demo/103",
+    "title": "Sample Analytics Reporting Dashboard",
+    "description": "SYNTHETIC DEMO: Create an analytics dashboard in Excel. Document refresh steps for the sample data.",
+    "status": "active",
+    "language": "en",
+    "type": "hourly",
+    "currency": {
+      "code": "USD"
+    },
+    "budget": {
+      "minimum": 65,
+      "maximum": 85
+    },
+    "source_notice": "Entirely fictional example; not a real job or client."
+  }
+]

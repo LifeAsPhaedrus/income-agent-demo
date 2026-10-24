@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width"
+  /><title>Income Opportunities</title
+  ><style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      color: #203638;
+      background: #edf2f0;
+    }
+    body {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 36px 24px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 10px 0;
+    }
+    small,
+    .muted {
+      color: #546b6b;
+    }
+    button {
+      border: 1px solid #a5b9b6;
+      background: white;
+      color: #234744;
+      border-radius: 8px;
+      padding: 11px 16px;
+      cursor: pointer;
+      font: inherit;
+    }
+    button:hover {
+      background: #e0eeea;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: wait;
+    }
+    .primary {
+      background: #176c5b;
+      color: white;
+    }
+    .primary:hover {
+      background: #115546;
+    }
+    nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 26px 0;
+    }
+    nav button.active {
+      background: #203e39;
+      color: white;
+    }
+    .summary {
+      background: #dae9e3;
+      border-radius: 12px;
+      padding: 18px;
+      margin: 20px 0;
+    }
+    .card {
+      background: white;
+      border: 1px solid #d5e0db;
+      border-radius: 14px;
+      padding: 26px;
+      margin: 18px 0;
+    }
+    .card h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    .budget {
+      font-size: 21px;
+      font-weight: 600;
+    }
+    .tag {
+      color: #176c5b;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #b8c9c3;
+      border-radius: 7px;
+      padding: 12px;
+      font: inherit;
+      margin-top: 8px;
+    }
+    a {
+      color: #176c5b;
+    }
+    li {
+      line-height: 1.5;
+      margin: 8px 0;
+    }
+    details {
+      margin: 18px 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    #message {
+      min-height: 24px;
+      color: #9a3f22;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    .empty {
+      padding: 40px;
+      background: white;
+      border-radius: 14px;
+    }
+  </style>
+  <header>
+    <div>
+      <small>SYNTHETIC PORTFOLIO DEMO</small>
+      <h1>Income Opportunities</h1>
+      <p class="muted">
+        Fictional opportunities. Local review. No accounts or credentials
+        needed.
+      </p>
+    </div>
+    <button id="refresh">Refresh results</button>
+  </header>
+  <div id="message" role="status" aria-live="polite"></div>
+  <div id="summary" class="summary">Loading fictional demo listings…</div>
+  <section class="card">
+    <label
+      >Sample search (fictional data only)
+      <input
+        id="query"
+        value="Excel dashboard"
+        maxlength="100"
+        style="font: inherit; padding: 10px; width: 240px"
+    /></label>
+    <button id="search" class="primary">Reload sample gigs</button>
+    <button id="export">Export sample selections</button>
+    <p id="db-status" class="muted"></p>
+    <details id="progress-panel">
+      <summary>Demo activity — <span id="run-status">Ready</span></summary>
+      <p class="muted">
+        Sample activity only. Reloading uses bundled fictional listings.
+      </p>
+      <pre
+        id="progress"
+        style="
+          white-space: pre-wrap;
+          max-height: 320px;
+          overflow: auto;
+          font-size: 14px;
+        "
+      ></pre>
+    </details>
+  </section>
+  <nav id="tabs"></nav>
+  <main id="cards"></main>
+  <p class="footer">
+    Pursue saves a gig to your list. It does not contact the client or submit a
+    bid. Your demo decisions stay in the local demo folder. This window works
+    without ChatGPT. Start demo.py again to reopen this demo.
+  </p>
+  <script src="/app.js"></script>
+</html>

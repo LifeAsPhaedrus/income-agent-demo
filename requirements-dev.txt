@@ -1,0 +1,2 @@
+# Development only; the Python application uses the standard library.
+ruff==0.14.2

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width"
+  /><title>Proposal review</title
+  ><style>
+    body {
+      font: 17px system-ui;
+      background: #edf2f0;
+      color: #203638;
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 16px;
+      font: 16px/1.6 system-ui;
+      border: 1px solid #a5b9b6;
+      border-radius: 8px;
+    }
+    button,
+    a {
+      font: inherit;
+    }
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: 1px solid #a5b9b6;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: 0.5;
+    }
+    a {
+      color: #176c5b;
+    }
+    #status {
+      color: #75451c;
+    }
+    pre {
+      white-space: pre-wrap;
+      max-height: 250px;
+      overflow: auto;
+    }
+    input {
+      font: inherit;
+      width: 100px;
+      padding: 8px;
+    }</style
+  ><a href="/">Back to opportunities</a>
+  <h1 id="title">Proposal review</h1>
+  <p id="status" role="status"></p>
+  <section>
+    <a id="listing" target="_blank" rel="noreferrer">View listing in browser</a>
+    <p>
+      <label
+        >Bid <input id="amount" type="number" min="0.01" step="0.01"
+      /></label>
+      <span id="currency"></span>
+    </p>
+    <p>
+      <label
+        >Delivery days after files and scope confirmation
+        <input id="days" type="number" min="1" max="365"
+      /></label>
+      <label
+        >Revision rounds
+        <input id="revisions" type="number" min="0" max="20" value="1"
+      /></label>
+    </p>
+    <p><strong id="delivery">Delivery: pending scope confirmation.</strong></p>
+    <p>
+      Freelancer uses a numeric delivery-days field. The start condition and
+      revision allowance are stated in the proposal for the client to agree to.
+      This is a local bid preview, not a submitted bid.
+    </p>
+    <p id="version"></p>
+    <textarea
+      id="body"
+      rows="19"
+      maxlength="8000"
+      aria-label="Proposal text"
+    ></textarea>
+    <div>
+      <button id="save">Save revised proposal</button
+      ><button id="draft">Draft with Qwen locally</button
+      ><button id="copy">Copy proposal</button>
+    </div>
+    <p>
+      Saving retains the proposal in the agent database. Submission requires the
+      separate review button below.
+    </p>
+  </section>
+  <section>
+    <h2>Submit reviewed bid</h2>
+    <p>
+      One 100% milestone for the completed deliverable. No paid upgrades,
+      deposits, or award acceptance.
+    </p>
+    <button id="prepare-bid">Review bid for submission</button>
+    <pre id="bid-preview"></pre>
+    <button id="submit-bid" disabled>Submit this bid to Freelancer</button>
+    <p id="bid-status"></p>
+  </section>
+  <section>
+    <h2>Optional ChatGPT editing</h2>
+    <p>
+      Export the saved proposal, listing, and confirmed professional experience.
+      Paste or attach the text in ChatGPT, then paste the revised proposal above
+      and save. No automatic ChatGPT call or usage charge is made by this
+      export.
+    </p>
+    <button id="preview">Preview export</button
+    ><button id="export">Download for ChatGPT</button
+    ><a href="https://chatgpt.com/" target="_blank" rel="noreferrer"
+      >Open ChatGPT</a
+    >
+    <pre id="export-preview"></pre>
+  </section>
+  <section>
+    <h2>Qwen progress</h2>
+    <pre id="progress"></pre>
+    <h2>Saved versions</h2>
+    <select id="versions" aria-label="Saved versions"></select
+    ><button id="restore">Load version into editor</button>
+  </section>
+  <script src="/proposal.js"></script>
+</html>

@@ -1,0 +1,39 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*token*
+*secret*
+*.pem
+*.key
+id_ed25519*
+demo-private/
+work/
+# Runtime state and personal records
+.demo/
+user-profile.json
+*-results.json
+source-status.json
+postgres-enabled
+*.sqlite*
+*.db
+*.log
+*.csv
+*.xlsx
+OPPORTUNITIES.*
+report.json
+proposals/
+bids/
+# Build and tool output
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.venv/
+node_modules/
+*.app/
+build/
+dist/
+.DS_Store
+
+PERSONALIZED-RESULTS.json

@@ -1,0 +1,9 @@
+{
+  "name": "income-opportunities-ui",
+  "private": true,
+  "scripts": {
+    "format:check": "prettier --check dashboard.js proposal.js dashboard.html proposal.html",
+    "format": "prettier --write dashboard.js proposal.js dashboard.html proposal.html"
+  },
+  "devDependencies": { "prettier": "3.6.2" }
+}
